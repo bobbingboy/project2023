@@ -1,9 +1,8 @@
 import { createContext, useState, useMemo } from 'react';
-import { createMuiTheme } from '@material-ui/core';
-
+import { createMuiTheme } from '@material-ui/core/styles';
 // color design tokens
 export const tokens = (mode) => ({
-  ...(mode === 'dark')
+  ...(mode === 'dark'
     ? {
       grey: {
         100: '#e0e0e0',
@@ -20,7 +19,7 @@ export const tokens = (mode) => ({
         100: '#d0d1d5',
         200: '#a1a4ab',
         300: '#727681',
-        400: '#434957',
+        400: '#1F2A40',
         500: '#141b2d',
         600: '#101624',
         700: '#0c101b',
@@ -117,7 +116,7 @@ export const tokens = (mode) => ({
         800: '#c3c6fd',
         900: '#e1e2fe',
       },
-    },
+    }),
 });
 
 // mui theme settings
